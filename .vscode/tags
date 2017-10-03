@@ -7,13 +7,13 @@
 BOT_NAME	../Spider/settings.py	/^BOT_NAME = 'Spider'$/;"	kind:variable	line:12
 BilibiliSpider	../Spider/spiders/bilibiliAnims.py	/^class BilibiliSpider(scrapy.Spider):$/;"	kind:class	line:6
 LuoxiaSpider	../Spider/spiders/luoxiaBooks.py	/^class LuoxiaSpider(scrapy.Spider):$/;"	kind:class	line:4
-LuoxiaSpider	../Spider/spiders/thepaperNews.py	/^class LuoxiaSpider(scrapy.Spider):$/;"	kind:class	line:4
 NEWSPIDER_MODULE	../Spider/settings.py	/^NEWSPIDER_MODULE = 'Spider.spiders'$/;"	kind:variable	line:15
 ROBOTSTXT_OBEY	../Spider/settings.py	/^ROBOTSTXT_OBEY = True$/;"	kind:variable	line:22
 SPIDER_MODULES	../Spider/settings.py	/^SPIDER_MODULES = ['Spider.spiders']$/;"	kind:variable	line:14
 SpiderItem	../Spider/items.py	/^class SpiderItem(scrapy.Item):$/;"	kind:class	line:11
 SpiderPipeline	../Spider/pipelines.py	/^class SpiderPipeline(object):$/;"	kind:class	line:9
 SpiderSpiderMiddleware	../Spider/middlewares.py	/^class SpiderSpiderMiddleware(object):$/;"	kind:class	line:11
+ThepaperaSpider	../Spider/spiders/thepaperNews.py	/^class ThepaperaSpider(scrapy.Spider):$/;"	kind:class	line:4
 __init__.py	../Spider/__init__.py	1;"	kind:file	line:1
 __init__.py	../Spider/spiders/__init__.py	1;"	kind:file	line:1
 bilibiliAnims.py	../Spider/spiders/bilibiliAnims.py	1;"	kind:file	line:1
@@ -24,15 +24,13 @@ luoxiaBooks.py	../Spider/spiders/luoxiaBooks.py	1;"	kind:file	line:1
 middlewares.py	../Spider/middlewares.py	1;"	kind:file	line:1
 name	../Spider/spiders/bilibiliAnims.py	/^    name = 'bilibili'$/;"	kind:variable	line:7
 name	../Spider/spiders/luoxiaBooks.py	/^    name = 'luoxia'$/;"	kind:variable	line:5
-name	../Spider/spiders/thepaperNews.py	/^    name = 'luoxia'$/;"	kind:variable	line:5
+name	../Spider/spiders/thepaperNews.py	/^    name = 'thepaper'$/;"	kind:variable	line:5
 pageNum	../Spider/spiders/bilibiliAnims.py	/^    pageNum = 1;$/;"	kind:variable	line:8
-pageNum	../Spider/spiders/luoxiaBooks.py	/^    pageNum = 2$/;"	kind:variable	line:6
 pageNum	../Spider/spiders/thepaperNews.py	/^    pageNum = 2$/;"	kind:variable	line:6
 parse	../Spider/spiders/bilibiliAnims.py	/^    def parse(self, response):$/;"	kind:member	line:12
-parse	../Spider/spiders/luoxiaBooks.py	/^    def parse(self, response):$/;"	kind:member	line:13
-parse	../Spider/spiders/thepaperNews.py	/^    def parse(self, response):$/;"	kind:member	line:13
-parse_book_detail	../Spider/spiders/luoxiaBooks.py	/^    def parse_book_detail(self, response):$/;"	kind:member	line:42
-parse_book_detail	../Spider/spiders/thepaperNews.py	/^    def parse_book_detail(self, response):$/;"	kind:member	line:21
+parse	../Spider/spiders/luoxiaBooks.py	/^    def parse(self, response):$/;"	kind:member	line:10
+parse	../Spider/spiders/thepaperNews.py	/^    def parse(self, response):$/;"	kind:member	line:12
+parse_book_detail	../Spider/spiders/luoxiaBooks.py	/^    def parse_book_detail(self, response):$/;"	kind:member	line:18
 pipelines.py	../Spider/pipelines.py	1;"	kind:file	line:1
 process_item	../Spider/pipelines.py	/^    def process_item(self, item, spider):$/;"	kind:member	line:10
 process_spider_exception	../Spider/middlewares.py	/^    def process_spider_exception(self, response, exception, spider):$/;"	kind:member	line:38
@@ -46,6 +44,6 @@ scrapy	../Spider/spiders/thepaperNews.py	/^import scrapy$/;"	kind:namespace	line
 settings.py	../Spider/settings.py	1;"	kind:file	line:1
 signals	../Spider/middlewares.py	/^from scrapy import signals$/;"	kind:namespace	line:8
 spider_opened	../Spider/middlewares.py	/^    def spider_opened(self, spider):$/;"	kind:member	line:55
-start_urls	../Spider/spiders/luoxiaBooks.py	/^    start_urls = [$/;"	kind:variable	line:8
+start_urls	../Spider/spiders/luoxiaBooks.py	/^    start_urls = [$/;"	kind:variable	line:6
 start_urls	../Spider/spiders/thepaperNews.py	/^    start_urls = [$/;"	kind:variable	line:8
 thepaperNews.py	../Spider/spiders/thepaperNews.py	1;"	kind:file	line:1

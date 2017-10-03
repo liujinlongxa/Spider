@@ -2,7 +2,7 @@
 import scrapy
 
 class LuoxiaSpider(scrapy.Spider):
-    name = 'luoxia'
+    name = 'books'
     start_urls = [
         'http://www.luoxia.com/top/'
     ]

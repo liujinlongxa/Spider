@@ -2,7 +2,7 @@
 import scrapy
 
 class ThepaperaSpider(scrapy.Spider):
-    name = 'thepaper'
+    name = 'news'
     pageNum = 2
     nextPageUrl = 'http://www.thepaper.cn/load_index.jsp?nodeids=26506&topCids=&pageidx=%d&lastTime=1502785671194&isList=true'
     start_urls = [
