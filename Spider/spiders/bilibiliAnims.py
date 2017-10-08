@@ -4,7 +4,7 @@ import json
 
 
 class BilibiliSpider(scrapy.Spider):
-    name = 'anims'
+    name = 'bilibiliAnims'
     pageNum = 1;
     next_url = 'http://api.bilibili.com/archive_rank/getarchiverankbypartion?type=json&tid=32&pn=%d'
     start_urls = ['http://api.bilibili.com/archive_rank/getarchiverankbypartion?type=json&tid=32&pn=1']
