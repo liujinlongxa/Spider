@@ -7,6 +7,7 @@
 BOT_NAME	../Spider/settings.py	/^BOT_NAME = 'Spider'$/;"	kind:variable	line:12
 BilibiliSpider	../Spider/spiders/bilibiliAnims.py	/^class BilibiliSpider(scrapy.Spider):$/;"	kind:class	line:6
 BilibiliSpider	../Spider/spiders/fengcheAnims.py	/^class BilibiliSpider(scrapy.Spider):$/;"	kind:class	line:5
+BilibiliSpider	../Spider/spiders/lazymanAudio.py	/^class BilibiliSpider(scrapy.Spider):$/;"	kind:class	line:6
 LuoxiaSpider	../Spider/spiders/luoxiaBooks.py	/^class LuoxiaSpider(scrapy.Spider):$/;"	kind:class	line:4
 NEWSPIDER_MODULE	../Spider/settings.py	/^NEWSPIDER_MODULE = 'Spider.spiders'$/;"	kind:variable	line:15
 ROBOTSTXT_OBEY	../Spider/settings.py	/^ROBOTSTXT_OBEY = True$/;"	kind:variable	line:22
@@ -24,11 +25,14 @@ from_crawler	../Spider/middlewares.py	/^    def from_crawler(cls, crawler):$/;"	
 items.py	../Spider/items.py	1;"	kind:file	line:1
 json	../Spider/spiders/bilibiliAnims.py	/^import json$/;"	kind:namespace	line:3
 json	../Spider/spiders/fengcheAnims.py	/^import json$/;"	kind:namespace	line:2
+json	../Spider/spiders/lazymanAudio.py	/^import json$/;"	kind:namespace	line:3
 json	../Spider/spiders/waitsunSoftware.py	/^import json$/;"	kind:namespace	line:3
+lazymanAudio.py	../Spider/spiders/lazymanAudio.py	1;"	kind:file	line:1
 luoxiaBooks.py	../Spider/spiders/luoxiaBooks.py	1;"	kind:file	line:1
 middlewares.py	../Spider/middlewares.py	1;"	kind:file	line:1
 name	../Spider/spiders/bilibiliAnims.py	/^    name = 'bilibiliAnims'$/;"	kind:variable	line:7
 name	../Spider/spiders/fengcheAnims.py	/^    name = 'fengcheAnims'$/;"	kind:variable	line:6
+name	../Spider/spiders/lazymanAudio.py	/^    name = 'lazymanAudio'$/;"	kind:variable	line:7
 name	../Spider/spiders/luoxiaBooks.py	/^    name = 'books'$/;"	kind:variable	line:5
 name	../Spider/spiders/thepaperNews.py	/^    name = 'news'$/;"	kind:variable	line:5
 name	../Spider/spiders/waitsunSoftware.py	/^    name = 'software'$/;"	kind:variable	line:8
@@ -36,10 +40,12 @@ pageNum	../Spider/spiders/bilibiliAnims.py	/^    pageNum = 1;$/;"	kind:variable	
 pageNum	../Spider/spiders/thepaperNews.py	/^    pageNum = 2$/;"	kind:variable	line:6
 parse	../Spider/spiders/bilibiliAnims.py	/^    def parse(self, response):$/;"	kind:member	line:12
 parse	../Spider/spiders/fengcheAnims.py	/^    def parse(self, response):$/;"	kind:member	line:9
+parse	../Spider/spiders/lazymanAudio.py	/^    def parse(self, response):$/;"	kind:member	line:10
 parse	../Spider/spiders/luoxiaBooks.py	/^    def parse(self, response):$/;"	kind:member	line:10
 parse	../Spider/spiders/thepaperNews.py	/^    def parse(self, response):$/;"	kind:member	line:12
 parse	../Spider/spiders/waitsunSoftware.py	/^    def parse(self, response):$/;"	kind:member	line:11
 parse_book_detail	../Spider/spiders/luoxiaBooks.py	/^    def parse_book_detail(self, response):$/;"	kind:member	line:18
+parse_detail_page	../Spider/spiders/fengcheAnims.py	/^    def parse_detail_page(self, response):$/;"	kind:member	line:20
 pipelines.py	../Spider/pipelines.py	1;"	kind:file	line:1
 process_item	../Spider/pipelines.py	/^    def process_item(self, item, spider):$/;"	kind:member	line:10
 process_spider_exception	../Spider/middlewares.py	/^    def process_spider_exception(self, response, exception, spider):$/;"	kind:member	line:38
@@ -49,13 +55,15 @@ process_start_requests	../Spider/middlewares.py	/^    def process_start_requests
 scrapy	../Spider/items.py	/^import scrapy$/;"	kind:namespace	line:8
 scrapy	../Spider/spiders/bilibiliAnims.py	/^import scrapy$/;"	kind:namespace	line:2
 scrapy	../Spider/spiders/fengcheAnims.py	/^import scrapy$/;"	kind:namespace	line:1
+scrapy	../Spider/spiders/lazymanAudio.py	/^import scrapy$/;"	kind:namespace	line:2
 scrapy	../Spider/spiders/luoxiaBooks.py	/^import scrapy$/;"	kind:namespace	line:2
 scrapy	../Spider/spiders/thepaperNews.py	/^import scrapy$/;"	kind:namespace	line:2
 scrapy	../Spider/spiders/waitsunSoftware.py	/^import scrapy$/;"	kind:namespace	line:4
 settings.py	../Spider/settings.py	1;"	kind:file	line:1
 signals	../Spider/middlewares.py	/^from scrapy import signals$/;"	kind:namespace	line:8
 spider_opened	../Spider/middlewares.py	/^    def spider_opened(self, spider):$/;"	kind:member	line:55
-start_urls	../Spider/spiders/fengcheAnims.py	/^    start_urls = ['http:\/\/www.dm530.net\/show\/20802.html']$/;"	kind:variable	line:7
+start_urls	../Spider/spiders/fengcheAnims.py	/^    start_urls = ['http:\/\/www.dm530.net\/list\/-hot--.html']$/;"	kind:variable	line:7
+start_urls	../Spider/spiders/lazymanAudio.py	/^    start_urls = ['http:\/\/www.lrts.me\/book\/5181']$/;"	kind:variable	line:8
 start_urls	../Spider/spiders/luoxiaBooks.py	/^    start_urls = [$/;"	kind:variable	line:6
 start_urls	../Spider/spiders/thepaperNews.py	/^    start_urls = [$/;"	kind:variable	line:8
 start_urls	../Spider/spiders/waitsunSoftware.py	/^    start_urls = ['https:\/\/www.waitsun.com\/']$/;"	kind:variable	line:9
